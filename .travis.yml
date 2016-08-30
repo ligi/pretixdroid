@@ -10,6 +10,7 @@ android:
 script:
     - cd pretixdroid
     - TERM=dumb ./gradlew check lint assembleDebug
+    - cat /home/travis/build/pretix/pretixdroid/pretixdroid/app/build/outputs/lint-results-debug.xml
 cache:
     directories:
         - $HOME/.gradle
